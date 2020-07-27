@@ -3,6 +3,7 @@ import 'package:shared_preference_project/home.dart';
 import 'package:shared_preference_project/utils/storageUtil.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await StorageUtil.getInstance();
   runApp(MyApp());
 }
